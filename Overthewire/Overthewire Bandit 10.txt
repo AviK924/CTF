@@ -1,0 +1,11 @@
+bandit level 10
+password is stored in data.txt and is preceeded by several = characters
+initially when we cat the contents it is unreadable, looking into what the strings command is for, it is used to return string characters into files, therefore pairing strings with grep it was possible to find the password for the next level.
+
+code typed
+ls
+cat data.txt
+strings data.txt
+strings data.txt | grep =======
+
+password obtained - G7w8LIi6J3kTb8A7j9LgrywtEUlyyp6s

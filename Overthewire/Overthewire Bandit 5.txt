@@ -1,0 +1,23 @@
+bandit level 5
+Password is stored in a human readable file in inhere directory
+we use the file command to check what kind of file the file is
+here we look for ASCII type of file
+
+code typed
+ls
+cd inhere
+ls
+file ./-file00
+file ./-file01
+file ./-file02
+file ./-file03
+file ./-file04
+file ./-file05
+file ./-file06
+file ./-file07
+file ./-file08
+file ./-file09
+
+when we cat any of the files it shows non readable text, on using the file command on all files we find that -file07 is of ASCII type. when we cat its contents we get the required password
+
+password obtained - lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR

@@ -1,0 +1,13 @@
+bandit level 3
+
+if you have a space in the file name it will try to read multiple files, therefore we use \ before the space in the file name to show that you mean space character.
+
+code typed
+ls
+cat spaces\ in\ this\ filename
+
+Alternatively:-
+ls
+cat "spaces in this filename"
+
+password obtaiend:- aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG

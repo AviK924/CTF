@@ -1,0 +1,15 @@
+bandit level 4
+Password is stored in a hidden directory inhere
+
+to display hidden directory we use ls -a 
+and we use the "cd" command to enter directories
+
+code typed:-
+
+ls -a
+cd inhere
+ls -a
+cat .hidden
+
+password obtained:-  2EW7BBsr6aMMoJ2HjW067dm8EgX26xNe
+

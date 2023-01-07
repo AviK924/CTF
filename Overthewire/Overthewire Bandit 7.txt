@@ -1,0 +1,22 @@
+bandit level 7
+file to be found has the properties:-
+
+owned by user bandit7
+owned by group bandit6
+33 bytes in size
+
+on checking syntax of find again we use -user for user -group for group and the "/" command to search the root system
+
+code typed
+ls
+ls -a
+find / -user bandit7 -group bandit6 -size 33c
+
+on typing this command we get a lot of permission denied on the terminal
+going through this we find one /var/lib/dpkg/info/bandit7.password which does not have permission denied and when we cat the contents we get the password
+
+cat /var/lib/dpkg/info/bandit7.password
+
+password obtained:- z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S
+
+

@@ -1,0 +1,12 @@
+Liunx & Git & Github
+Dual booted linux kali OS by referring to a video
+
+Learnt various Git commands
+git init
+    add
+    status
+    commit
+    stash
+    fetch
+    log
+    reset	

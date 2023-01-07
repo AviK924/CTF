@@ -1,0 +1,15 @@
+bandit level 1
+Problem:-file called readme contains password to the next level.
+
+Commands used:-
+ls - displays files
+cat - reads data from file and gives output
+
+code typed:-
+
+ls
+cat readme
+
+which obtains the required password
+
+password obtained :- NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL

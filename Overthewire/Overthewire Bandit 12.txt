@@ -1,0 +1,12 @@
+bandit level 12
+problem says all characters are rotated by 13, looking into the tr command and googling the syntax we see that the tr command is used to replace and manipulate characters in a text file. on googling how to use the command to decode rot13 we come up with 
+tr ['A-Za-z'] ['N-ZA-Mn-za-m'] 
+which makes the characters in a string rotate by 13
+and on pairing it with the cat command we get the required password
+
+code typed:-
+ls
+cat data.txt
+cat data.txt | tr ['A-Za-z'] ['N-ZA-Mn-za-m']
+
+password obtained - JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv

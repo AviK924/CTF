@@ -1,0 +1,99 @@
+bandit level 13
+reading the manuals given for the commands tar, gzip, bzip2, xxd , mkdir, cp and mv
+
+the question asks us to craete a new working directory under /tmp and copy the file there and perform operations
+for this we use 
+mkdir /tmp/ABC123
+and then use the cp command to copy the file into the directory
+cp data.txt /tmp/ABC123
+and then navigate into the temp folder
+initially it says the file is a hexdump which has been repeteadly compressed,
+we see that the xxd command is used for creating or reversing a hex dump and xxd -r is used to revert a hex dump,
+initially on using xxd -r data.txt it simply displays the reversed hex dump and doesnt store it, on googling i found
+the “>” is an output operator that overwrites the existing file
+using this along with the xxr command i can overwrite a new file, therefore creating a new file using touch and then the xxr command
+touch ban.txt
+xxr -d data.txt > ban.txt
+and now ban.txt has the reversed hex dump but the file still isnt human readable
+on performing file ban.txt we see that the it is compressed in gzip format
+checking the commands of gzip, -d is used to decompress but the file has to have the gzip extension for this, and the manual says the extension is .gz
+to change the extension we use the mv command
+mv ban.txt ban.gz
+and then we can use any of the following commands to decompress
+gzip -d ban.gz
+gunzip ban.gz 
+as the manual says gunzip can decompress files with .gz extension
+then checking the file again it says it is bzip2 compressed
+on checking manual for bzip2 we find the extension as .bz2 and the decompression command as either bunzip2 or -d with bzip2
+using the command
+mv ban ban.bz2
+bzip2 -d ban.bz2
+or
+bunzip2 ban.bz2
+after this when we check the file again it is gzip compressed, performing same procdeure
+mv ban ban.gz
+gunzip ban.gz
+after this when we check the file it is in POSIX tar archive
+checking manual for tar the extension is .tar and -x is used to extract and f is used for regular file therefore using
+mv ban ban.tar
+tar -xf ban.tar
+we see a bin file is formed which is again of type tar
+renaming
+mv data5.bin data5.tar
+tar -xf data5.tar
+another bin file is formed it is of bzip2 type
+using same procedure as above
+mv data6.bin data6.bz2
+bzip2 -d data6.bz2
+on checking file again it is of POSIX tar
+doing same thing for tar
+mv data6 data6.tar
+tar -xf data6.tar
+another bin file is formed
+it is of type gzip
+doing same procedure for gzip
+mv data8.bin data8.gz
+gzip -d data8.gz
+after this the file type shows ASCII text and when we cat its contents we get the required password
+
+
+password obatained - wbWdlBxEir4CaE8LaPhauuOo6pwRmrDw
+
+code typed
+mkdir \tmp\ABC123
+cp data.txt \tmp\ABC123
+touch ban.txt
+xxd -r data.txt > ban.txt
+file ban.txt
+mv ban.txt ban.gz
+gzip -d ban.gz
+file ban.gz
+mv ban ban.bz2
+bzip2 -d ban.bz2
+file ban
+mv ban ban.tar
+tar -xf ban.tar
+ls
+file data5.bin
+mv data5.bin data5.tar
+tar -xf data5.tar
+ls
+file data6.bin
+mv data6.bin data6.bz2
+bunzip2 data6.bz2
+file data6
+mv data6 data6.tar
+tar -xf data6.tar
+ls
+file data8.bin
+mv data8.bin data8.gz
+gunzip data8.gz
+file data8
+cat data8
+
+password obtained wbWdlBxEir4CaE8LaPhauuOo6pwRmrDw
+
+
+
+
+

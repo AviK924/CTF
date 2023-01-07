@@ -1,0 +1,7 @@
+bandit level 0
+Problem requires us to log in using ssh
+
+code typed in terminal:-
+
+ssh bandit0@bandit.labs.overthewire.org -p 2220
+

@@ -1,0 +1,15 @@
+bandit level 9
+the password is in data.txt in the line that occours only once
+
+looking for the sort syntax and the uniq syntax i tried
+
+code typed:-
+
+cat data.txt
+sort data.txt
+
+this gives the text sorted, therefore after pairing it with the uniq command i get the password
+
+sort data.txt | uniq -u
+
+password obtained - EN632PlfYiZbn3PhVK3XOGSlNInNE00t

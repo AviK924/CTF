@@ -1,0 +1,12 @@
+bandit level 8
+problem requires us to search a text file for the word millionth and that line has the password
+for this we use the "grep" command
+the grep command is used to search datasets for lines that match the expression provided
+ 
+code typed:-
+grep millionth
+
+ALternatively we can pipe the commands
+cat data.txt | grep millionth
+
+password obtained :- TESKZC0XvTetK0S9xNwm25STk5iWrBvP

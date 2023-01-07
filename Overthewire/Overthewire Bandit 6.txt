@@ -1,0 +1,19 @@
+bandit level 6
+file has the properties
+human-readable
+1033 bytes in size
+not executable
+
+to find a file we use the "find" command
+after looking for the syntax i found that f is used for regular files and c is used to indicate bytes 
+
+code typed
+ls
+cd inhere
+ls
+find -type f -size 1033c
+
+this gives the location of one file
+cat maybehere07/.file2
+
+password obtained - P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU

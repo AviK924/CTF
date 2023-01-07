@@ -1,0 +1,8 @@
+bandit level 11
+it says the code is encoded in base64 form therefore after looking into the syntax of the base64 command i saw that -d is used to decode and typing base64 -d data.txt gives the required password
+
+code typed
+ls 
+base64 -d data.txt
+
+password obatained - 6zPeziLdR2RKNdNYFNb6nVCKzphlXHBM

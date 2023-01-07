@@ -1,0 +1,11 @@
+bandit level 2
+Problem:-
+
+dash (-) is generally used by commands to specify options and arguments.
+Therefore we use ./ before the dash to perform the operation
+
+code typed
+ls
+cat ./-
+
+password obtained :- rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi
